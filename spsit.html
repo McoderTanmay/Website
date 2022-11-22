@@ -24,18 +24,20 @@
         .bar {
 
             /* background-color: #1f0318; */
-
+            margin-top: 10px;
             height: 56px;
             font-family: 'Times New Roman', Times, serif;
         }
 
-        .logo {}
+        .logo {
+            width: 70px;
+        }
 
         #sear {
             color: aliceblue;
             width: 250px;
             position: relative;
-            bottom: 17px;
+            bottom: -7px;
             left: -23px;
             height: 30px;
             border-radius: 19px;
@@ -49,7 +51,7 @@
         #btn {
             color: aliceblue;
             position: relative;
-            bottom: 17px;
+            bottom: -6px;
             left: 856px;
             background-color: #1f0318;
             border: 1px;
@@ -63,15 +65,15 @@
             color: aliceblue;
             position: relative;
             left: 912px;
-            top: -10px;
+            top: 13px;
         }
 
         #location {
             position: relative;
             text-decoration: none;
             color: aliceblue;
-            bottom: 9px;
-            left: 1215px;
+            bottom: -13px;
+            left: 1225px;
         }
 
         .gg1 {
@@ -80,12 +82,15 @@
             margin-top: 0px;
             display: inline-block;
             height: 140vh;
-            width: 250px;
+            /* width: 250px; */
+            width: 31px;
             background-color: #490739;
             position: sticky;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             list-style: none;
             text-decoration: none;
+            overflow: hidden;
+            white-space: nowrap;
         }
 
         .itm {
@@ -96,23 +101,34 @@
             /* text-decoration: none; */
             color: aliceblue;
             padding: 24px 1px;
-            /* display: flex; */
             /* align-content: center; */
-            /* position: -webkit-sticky; */
+            
         }
 
         .gg1 li a {
             text-decoration: none;
             color: aliceblue;
             padding: 10px 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            position: fixed;
+            left: 70px;
             /* display: flex; */
             /* align-content: center; */
         }
-
+        #mii{
+            position: relative;
+            left: -23px;
+            bottom: -9px;
+        }
+        .gg1:hover{
+            width: 200px;
+            transition: 1s;
+        }
         .gg1 li:hover {
             cursor: pointer;
             color: #1f0318;
-            font-size: 20px;
+            font-size: 23px;
         }
 
         .gg1 li a:hover {
@@ -150,5 +166,4 @@
         </ul>
     </div>
 </body>
-
 </html>
