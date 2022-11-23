@@ -91,6 +91,7 @@
             text-decoration: none;
             overflow: hidden;
             white-space: nowrap;
+            /* z-index: -5; */
         }
 
         .itm {
@@ -109,10 +110,9 @@
             text-decoration: none;
             color: aliceblue;
             padding: 10px 10px;
-            overflow: hidden;
             white-space: nowrap;
-            position: fixed;
-            left: 70px;
+            position: relative;
+            left: 10px;
             /* display: flex; */
             /* align-content: center; */
         }
@@ -124,6 +124,7 @@
         .gg1:hover{
             width: 200px;
             transition: 1s;
+            z-index: 5;
         }
         .gg1 li:hover {
             cursor: pointer;
@@ -133,6 +134,11 @@
 
         .gg1 li a:hover {
             color: #1f0318;
+        }
+        .images{
+            position: relative;
+            bottom: 142vh;
+            margin-left: 71px;
         }
     </style>
 </head>
@@ -150,7 +156,6 @@
                     shopping_cart_checkout</span></a>
         </nav>
     </header>
-    <div class="sidnav">
         <ul class="gg1">
             <li class="itm"><span class="material-symbols-outlined" id="mii">trending_up</span><a
                     href="_blank">Trending</a></li>
@@ -164,6 +169,9 @@
             <li class="itm"><i class="fa-solid fa-right-from-bracket" id="mii"></i><a href="_blank">logout</a></li>
             <li class="itm"><i class="fa-regular fa-gear" id="mii"></i><a href="_blank">Help</a></li>
         </ul>
+    <div class="images">
+        <img src="/images/1.5_AC_30.jpg" alt="ac" id="perti">
+        <p>1.5 Ton A.C</p>
     </div>
 </body>
 </html>
